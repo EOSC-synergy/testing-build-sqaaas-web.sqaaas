@@ -7,9 +7,6 @@ pipeline {
 
     stages {
         stage('SQA baseline criterion: qc_doc') {
-            when {
-                branch pattern: 'sqaaas', comparator: ''
-            }
             steps {
                 script {
                     projectConfig = pipelineConfig(
