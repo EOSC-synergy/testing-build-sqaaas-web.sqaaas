@@ -6,16 +6,12 @@ config:
       deploy_template: .sqa/docker-compose.yml
       repo: https://github.com/EOSC-synergy/sqaaas-web.git
 environment:
-  JPL_DOCKERPUSH: node
   JPL_DOCKERSERVER: https://hub.docker.com/
 sqa_criteria:
   qc_doc:
     repos:
       sqaaas-web:
         commands:
-        - npm install
+        - npm --help
         container: node
-        tox:
-          testenv: []
-          tox_file: ''
 timeout: 600
