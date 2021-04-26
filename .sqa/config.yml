@@ -12,6 +12,6 @@ sqa_criteria:
     repos:
       sqaaas-web:
         commands:
-        - npm -l
+        - pwd
         container: node
 timeout: 600
