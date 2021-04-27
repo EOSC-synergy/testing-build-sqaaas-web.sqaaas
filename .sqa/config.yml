@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-web:
-      branch: master
+      branch: dev-diana
       deploy_template: .sqa/docker-compose.yml
       repo: https://github.com/EOSC-synergy/sqaaas-web.git
 environment:
@@ -10,7 +10,7 @@ environment:
 sqa_criteria:
   qc_doc:
     repos:
-      sqaaas-web:
+      github.com/EOSC-synergy/sqaaas-web:
         commands:
         - pwd
         container: node
