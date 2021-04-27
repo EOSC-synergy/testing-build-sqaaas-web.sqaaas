@@ -22,5 +22,16 @@ pipeline {
                 }
             }
         }
+        stage('non-JePL stage') {
+            steps {
+                sh 'hostname'
+                sh 'docker-compose ps'
+            }
+            post {
+                cleanup {
+                    cleanWs()
+                }
+            }
+        }
     }
 }
