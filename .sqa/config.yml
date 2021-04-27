@@ -1,7 +1,7 @@
 config:
   credentials: []
   project_repos:
-    sqaaas-web:
+    github.com/EOSC-synergy/sqaaas-web:
       branch: master
       deploy_template: .sqa/docker-compose.yml
       repo: https://github.com/EOSC-synergy/sqaaas-web.git
